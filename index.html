@@ -119,6 +119,8 @@
         border: 1px solid var(--gray-100);
         position: relative;
         overflow: hidden;
+        display: flex;
+        flex-direction: column;
       }
 
       .product-name {
@@ -146,6 +148,9 @@
         border: none;
         cursor: pointer;
         font-size: 1rem;
+        margin-top: auto;
+        align-self: flex-start;
+        line-height: 1;
       }
 
       .cta-button:focus {
@@ -323,6 +328,24 @@
                 rel="noopener noreferrer"
               >
                 Check Out Hyaline
+                <span aria-hidden="true">→</span>
+              </a>
+            </article>
+            <article class="product-card">
+              <h3 class="product-name"><code>/prompt</code></h3>
+              <p class="product-description">
+                An Open Source, Model Context Protocol (MCP) server that enables sharing of
+                prompts and resources for AI assistants. It's git-backed and
+                supports multiple repositories, so you can easily share and
+                version your prompts.
+              </p>
+              <a
+                href="https://slash-prompt.appgardenstudios.com"
+                class="cta-button"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Check Out <code>/prompt</code>
                 <span aria-hidden="true">→</span>
               </a>
             </article>
